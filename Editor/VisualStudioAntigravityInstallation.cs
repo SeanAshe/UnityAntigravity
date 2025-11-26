@@ -510,6 +510,8 @@ namespace Microsoft.Unity.VisualStudio.Editor
 
 		public override bool Open(string path, int line, int column, string solution)
 		{
+			var application = Path;
+
 			line = Math.Max(1, line);
 			column = Math.Max(0, column);
 
